@@ -10,7 +10,7 @@ A web application that randomly distributes a standard deck of 52 playing cards 
 - Dockerized deployment
 
 ## Tech Stack
-- Backend: PHP 8.0
+- Backend: PHP
 - Frontend: React
 - Docker & Docker Compose
 
@@ -28,7 +28,7 @@ A web application that randomly distributes a standard deck of 52 playing cards 
 ### Quick Start
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/naflan121/playing-cards.git
    cd playing-cards
    ```
 
@@ -41,14 +41,10 @@ A web application that randomly distributes a standard deck of 52 playing cards 
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:8000
 
-### Development Setup
-- Backend files are mounted at `/var/www/html` in the PHP container
-- Frontend files are mounted at `/app` in the Node container
-- Changes to the source code will be reflected immediately
 
 ### Container Details
 - Backend container:
-  - PHP 8.0 with Apache
+  - PHP with Apache
   - Exposed on port 8000
   - Includes necessary PHP extensions
 
@@ -86,8 +82,3 @@ Response:
     ]
 }
 ```
-
-## Error Handling
-- Invalid input returns 400 status code with error message
-- CORS enabled for frontend access
-- Proper validation of number of people
