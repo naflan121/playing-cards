@@ -2,13 +2,6 @@
 
 A web application that randomly distributes a standard deck of 52 playing cards to a specified number of people.
 
-## Features
-- Distributes cards randomly among specified number of people
-- Proper input validation and error handling
-- Clean and modern user interface
-- RESTful API backend
-- Dockerized deployment
-
 ## Tech Stack
 - Backend: PHP
 - Frontend: React
